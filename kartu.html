@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buat bocill</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fca311;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%; /* Agar tidak terlalu lebar di layar kecil */
+        }
+        .image {
+    width: 100%;
+    max-height: 400px; /* Sesuaikan tinggi maksimal agar tidak terlalu besar */
+    object-fit: cover; /* Bisa diubah ke "contain" jika ingin menampilkan seluruh gambar */
+    border-radius: 10px;
+}
+        .message {
+            margin-top: 15px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #15803d;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="foto_ulangtahun.jpg" class="image">
+        
+ 
+        <h3>dari PADLI</h3>
+        <p class="message"> <br>happy birthday, wulann! 🎉🎂<br>
+
+           hari ini hari spesial karena seseorang yang luar biasa lahir di dunia inii. Aku bersyukur bisa mengenal kamu dan melihat betapa berharganya kehadiranmu dalam hidup banyak orang, termasuk akuu.
+            
+            semoga di usia yang baru inii, kamu selalu diberi kesehatann, kebahagiaann, dan kekuatan untuk mencapai semua impianmuu. aku tahu kamu orang yang hebatt, jadi jangan pernah ragu sama diri sendiri yaa! tetap jadi pribadi yang baikk, ceriaa, dan selaluu menyebarkan energi positif seperti yang selalu kamu lakukann.<br>
+
+           You are one of the most important people in my life. Thank you for surviving this far, thank you for giving advice or whatever, always being patient with my attitude which is sometimes like that.
+             terima kasih sudah selalu ada buat akuu, mendengarkan keluh kesahku. You are someone who means to me, dan aku harap kamu selalu dikelilingi oleh orang-orang yang benar-benar sayang sama kamuu.
+             selamat ulang tahun, bocill! Nikmati hari spesialmuu dan jangan lupa bahagia selaluu! 💖🎊</p>
+
+            <br>ini hadiah dari aku<br>
+            <a class="button" href="flower.html">Lanjutkan</a>
+            <audio id="birthdaySong">
+                <source src="ANDMESH - ANUGERAH TERINDAH (OFFICIAL MUSIC VIDEO).mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const audio = document.getElementById("birthdaySong");
+            
+                    // Mencoba memutar audio secara otomatis
+                    audio.play().catch(error => {
+                        console.log("Pemutaran otomatis diblokir, meminta interaksi pengguna.");
+                        document.body.addEventListener("click", () => {
+                            audio.play();
+                        }, { once: true }); // Hanya butuh satu klik untuk mulai
+                    });
+                });
+            </script>
+            
+    </div>
+</body>
+</html>
